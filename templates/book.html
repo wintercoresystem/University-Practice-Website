@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Dune
+{% endblock %}
+
+{% block body %}
+<!-- Content -->
+<div class="container mt-4 mb-4">
+  <div class="d-flex">
+<!-- Left -->
+    <div class="restrain-250">
+      <img class="restrain-250" src="{{ url_for('static', filename='imgs/book_cover_003.jpg') }}" alt="">
+      <div>
+        <div class="d-flex justify-content-center">
+          <p>Tags:</p>
+        </div>
+        <div class="text-center">
+          <p>sci-fi, deep plot, supernatural, classic</p>
+        </div>
+      </div>
+    </div>
+<!-- Right -->
+    <div class="ms-3">
+      <h2 class="text-end">Book of June - Dune by Frank Herbert</h2>
+      <p class="p-content">Dune, written by Frank Herbert, is a science fiction masterpiece that has captivated readers for decades. The story is set in a distant future, where noble houses fight for control of the planet Arrakis, which is the only source of the valuable spice known as melange. The intense atmosphere and mind-blowing twists in the book make it a thrilling read.</p>
+      <p class="p-content">One of the things I love about Dune is the world-building. Herbert created a rich and vivid environment that is both unique and believable. The planet Arrakis is a harsh and unforgiving place, with giant sandworms that roam the deserts and fierce sandstorms that can kill in an instant. The political intrigue and power struggles between the different houses add another layer of complexity to the story, making it a thrilling read from start to finish.</p>
+      <p class="p-content">The characters in Dune are also incredibly well-developed. The protagonist, Paul Atreides, is a complex and multi-faceted character who undergoes a dramatic transformation throughout the course of the book. The other characters, including the villainous Baron Harkonnen and the mysterious Reverend Mother Gaius Helen Mohiam, are equally fascinating and well-realized.</p>
+      <p class="p-content">But what really sets Dune apart are the mind-blowing twists and turns in the plot. Herbert masterfully weaves together a complex web of intrigue and deception, with surprises around every corner. The book is full of unexpected revelations and shocking betrayals that keep the reader on the edge of their seat.</p>
+      <p class="p-content">Furthermore, Dune has had a significant impact on the science fiction genre as a whole. Its influence can be seen in many other works of fiction, including movies, TV shows, and video games. For example, the Star Wars franchise has been heavily influenced by Dune, with George Lucas citing it as one of his primary inspirations. The use of "the Force" and the desert planet of Tatooine are both nods to Herbert's work.</p>
+      <p class="p-content">In addition to its impact on other works of fiction, Dune has also had a lasting impact on society as a whole. The book explores themes such as ecology, religion, and politics, and has been praised for its insightful commentary on these topics. The concept of the "Butlerian Jihad," which is a war against thinking machines, has also been interpreted as a warning against the dangers of artificial intelligence.</p>
+      <p class="p-content">Another aspect of Dune that makes it so captivating is the way in which it explores complex philosophical and metaphysical concepts. For example, the book delves into the nature of time, the concept of destiny, and the idea of the collective unconscious. These themes are explored through the use of the Bene Gesserit sisterhood and their ability to access genetic memories, as well as through the prophetic visions experienced by Paul Atreides.</p>
+      <p class="p-content">Furthermore, the book's treatment of religion is particularly noteworthy. The Fremen, the native people of Arrakis, have a complex religious system that is based on the worship of the planet and the sandworms. This religion is intertwined with the ecological balance of the planet and the production of the spice, and is an integral part of the story.</p>
+      <p class="p-content">Finally, Dune is also notable for its use of language and wordplay. Herbert invents a number of terms and concepts that are unique to the world of the book, such as the "Mentat" and the "Kwisatz Haderach." These terms are often used in clever and unexpected ways, adding to the richness and complexity of the story.</p>
+      <p class="p-content">In conclusion, Dune is a true science fiction masterpiece that continues to captivate readers and inspire other works of fiction. Its complex world-building, well-developed characters, mind-blowing twists, and exploration of complex philosophical and metaphysical concepts make it a book that is both thrilling and thought-provoking. If you are a fan of science fiction or fantasy, you owe it to yourself to read this classic.</p>
+    </div>
+  </div>
+<!-- Related -->
+    <h1 class="text-center mt-4">Related stuff</h1>
+  <div class="d-flex justify-content-between ">
+    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj9wI7Ax9b_AhUVg_0HHZCBADIQFnoECBIQAQ&url=https%3A%2F%2Fwww.kinopoisk.ru%2Ffilm%2F409424%2F&usg=AOvVaw2iGdnSltsKPQ7Rt5jw34Ng&opi=89978449">
+      <div class="restrain-250">
+        <img class="restrain-250" src="{{ url_for('static', filename='imgs/film_cover.jpg') }}" alt="">
+        <p class="text-center">New film adaptation - "Dune" from 2021</p>
+      </div>
+    </a>
+    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjQ2P3by9b_AhX-hf0HHT-0BSoQFnoECBUQAw&url=https%3A%2F%2Fwww.livelib.ru%2Fbook%2F1002325556-messiya-dyuny-frenk-gerbert&usg=AOvVaw0-bcGm_RRTK57pPbKTMC4L&opi=89978449">
+      <div class="restrain-250">
+        <img  class="restrain-250"src="{{ url_for('static', filename='imgs/sequel_cover.jpg') }}" alt="">
+        <p class="text-center">Sequel of original series - "Dune Messiah"</p>
+      </div>
+    </a>
+    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjN2dvpy9b_AhXz_7sIHUAyBKwQFnoECBYQAQ&url=https%3A%2F%2Fwww.livelib.ru%2Fbook%2F1002840134-giperion-den-simmons&usg=AOvVaw2ee_Iwl2i3PiT6mFY8cyNm&opi=89978449">
+      <div class="restrain-250">
+        <img class="restrain-250" src="{{ url_for('static', filename='imgs/hyperion_cover.jpg') }}" alt="">
+        <p class="text-center">Similar book - "Hyperion" by Dan Simmons</p>
+      </div>
+    </a>
+    <a href="https://youtu.be/YF1eYbfbH5k">
+      <div class="restrain-250">
+        <img class="restrain-250" src="{{ url_for('static', filename='imgs/interstellar_soundtrack_album_cover.jpg') }}" alt="">
+        <p class="text-center">Best OST to listen to while reading dune -  "Interstellar" by Hans Zimmer</p>
+      </div>
+    </a>
+  </div>
+</div>
+{% endblock %}

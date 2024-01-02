@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Bookshelf
+{% endblock %}
+
+{% block body %}
+
+<main>
+<!---- About ---->
+  <div class="container"> 
+    <a class="anchor" id="about-section">a</a>
+    <h1 class="text-center mt-4">About me</h1>
+    <div class="d-flex">
+      <p class="text-end">Hi there, I am a passionate book-lover. I have always been fascinated by the power of words and the way they can transport us to different worlds and experiences. I created this blog to share my love of reading with others and to connect with fellow book enthusiasts. Here, you will find reviews of my favorite books, recommendations for new reads, and discussions about all things literary. I believe that books have the power to inspire, educate, and entertain, and I hope to spread that message through this blog. Reading is a wonderful pastime that can enrich our lives in countless ways. Whether we are looking to escape reality for a while, learn something new, or simply be entertained, books have the power to transport us to different times and places, and to introduce us to new ideas and perspectives. So, grab a cup of coffee and join me on this journey through the world of literature!</p>
+      <img height="300" class="shadow" src="{{ url_for('static', filename='imgs/about_me.jpg') }}" alt="">
+    </div>
+  </div>
+<!---- Books ---->
+  <div class="container">
+    <a class="anchor" id="book-section">a</a>
+    <h1 class="text-center mt-4">Books</h1>
+<!-- Card of month -->
+    <div class="p-2 card"style="border: 0px solid #000000; background: linear-gradient(267.45deg, #772203 0%, #EF9810 100%); color: white;">
+      <a href="book1" class="white">
+        <div class="d-flex">
+          <div class="">
+            <img style="max-width: 150px;" src="{{ url_for('static', filename='imgs/book_cover_003.jpg') }}" alt="">
+          </div>
+          <div class="text-justify">
+            <h2>Book of June - Dune by Frank Herbert</h2>
+            <p class="">Dune, written by Frank Herbert, is a science fiction masterpiece that has captivated readers for decades. The story is set in a distant future, where noble houses fight for control of the planet Arrakis, which is the only source of the valuable spice known as melange. The intense atmosphere and mind-blowing twists in the book make it a thrilling read. One of the things I love about Dune is the world-building. Herbert created a rich and vivid environment that is both unique and believable. The planet Arrakis is a harsh and unforgiving place, with giant sandworms that roam the deserts and fierce sandstorms that can kill in an instant. The political intrigue and power struggles between the different houses add another layer of complexity to the story, making it a thrilling read from start to finish. </p>
+          </div>
+        </div>
+      </a>
+    </div>
+<!-- Regular Card -->
+  <div>
+    <a href="404" class="">
+      <div class="p-2 card mt-3">
+        <div class="d-flex flex-nowrap">
+          <div class="">
+            <img style="max-width: 150px;" src="{{ url_for('static', filename='imgs/book_cover_002.jpg') }}" alt="">
+          </div>
+          <div class="text-justify">
+            <h2>Dystopia against books - 451° fahrenheit by Ray Bradbury</h2>
+            <p class="">"Fahrenheit 451" is a dystopian novel by Ray Bradbury, first published in 1953. The story is set in a future society where books are outlawed and "firemen" burn any that are found. The protagonist, Guy Montag, is a fireman who begins to question his role in society and ultimately rebels against it. Along the way, he meets a group of rebels who are committed to preserving knowledge and literature, and he becomes involved in their efforts to resist the oppressive government. Through its portrayal of a society that values conformity and entertainment over critical thinking and intellectual pursuits. The novel has been influential in shaping discussions about intellectual freedom and the role of literature in society, and has been adapted into numerous films, plays, and other forms of media.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+<!-- Hidden cards -->
+  <div class="hidden-card">
+    <a href="404" >
+      <div class="p-2 card mt-3">
+        <div class="d-flex flex-nowrap">
+          <div class="">
+            <img style="max-width: 150px;" src="{{ url_for('static', filename='imgs/book_cover_001.jpg') }}" alt="">
+          </div>
+          <div class="text-justify">
+            <h2>Time loop magic - Mother of learning by Domagoj Kurmaic</h2>
+            <p class="">"Mother of Learning" is a web novel by author Domagoj Kurmaic that follows the story of Zorian, a young mage stuck in a time loop, repeating the same month over and over again. As he struggles to find a way out of the loop, Zorian uncovers dark secrets about his world and himself, while also developing his magical abilities and forming relationships with his fellow classmates. The novel blends elements of fantasy, mystery, and coming-of-age, and has gained a dedicated following among online readers.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+<!-- More button -->
+    <div class="d-flex justify-content-center">
+        <div class="mt-3">
+          <button  id="more-btn" type="button" class="btn card">
+            <p class="m-0" id="more-btn-text">Show more book reviews</p>
+          </button>
+      </div>
+    </div>
+  </div>
+<!---- Events ---->
+  <div>
+    <a class="anchor" id="event-section">a</a>
+      <h1 class="text-center mt-4">Events</h1>
+<!-- Event 1-->
+      <div style="color: white; background-color: black;">
+        <div class="event-img" style="background-image: url({{ url_for('static', filename='imgs/event.png') }});">
+          <div class="container pb-5 pt-5">
+            <h2>Event of June - Speedreading</h2>
+            <p class="p-content">Are you tired of taking months to finish a book? Do you want to improve your reading speed and comprehension? Then join the Booksophy Speed Reading Challenge!</p>
+            <p class="p-content">Starting today, we challenge you to improve your reading speed and share your progress with us. Here's how to participate</p>
+            <p class="p-content">1. Set a goal for how many words per minute you want to read (you can use an online speed reading test to determine your starting point)</p>
+            <p class="p-content">2. Practice reading for at least 30 minutes every day</p>
+            <p class="p-content">3. After one week, take another speed reading test and track your progress</p>
+            <p class="p-content">4. Share your progress with us by sending an email to gigareader@mail.ru with your name and your new words per minute score</p>
+            <p class="p-content">We'll be sharing tips and tricks throughout the challenge to help you improve your reading speed and comprehension. Plus, everyone who participates will be entered into a drawing to win a free e-reader!</p>
+            <p class="p-content">So what are you waiting for? Join the Booksophy Speed Reading Challenge today and become a gigareader!</p>
+          </div>
+        </div>
+<!-- Event 2-->
+        <div class="event-img" style="background-image: url({{ url_for('static', filename='imgs/event_1.png') }});">
+          <div class="container pb-5 pt-5">
+            <h2>Event of May results - Crowd read</h2>
+            <p class="p-content">We were thrilled to see so many participants take on the Crowd Read Challenge with such enthusiasm. Reading in a noisy and distracting environment can be a daunting task, and we were impressed with the creativity and determination of our readers who found ways to make it work.</p>
+            <p class="p-content">Some of our readers shared their tips for staying focused during the challenge, such as using noise-cancelling headphones, choosing books that are particularly engaging, or finding a quiet corner in a busy place. Others found that the challenge helped them to break out of their reading routines and discover new books or genres that they might not have otherwise explored.</p>
+            <p class="p-content">We were also excited to see the community that formed around this challenge. Many participants shared their experiences on social media using the hashtag #CrowdReadChallenge, and we loved seeing readers from all over the world connect and support each other.</p>
+            <p class="p-content">At Bibliosophy, we believe that reading is an essential part of a fulfilling life, and we are committed to finding new ways to inspire and challenge our readers. We hope that the Crowd Read Challenge was a fun and rewarding experience for everyone who participated, and we can't wait to see what our readers will achieve in future challenges.</p>
+            <p class="p-content">Thank you for your continued support of Bibliosophy, and happy reading!</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</main>
+{% endblock %}

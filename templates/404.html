@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Error 404
+{% endblock %}
+
+{% block body %}
+  <img  src="{{ url_for('static', filename='imgs/no_books.jpg') }}" style="height:100%; border-radius: 0px;">
+
+{% endblock %}
